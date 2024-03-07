@@ -21,7 +21,6 @@ The Orders table contains information about each order, including the order and 
 The Products table contains information about each product sold by the company, including the product code, name, category, cost price, sale price, and weight.
 - Loaded from a web-hosted csv file
 - Duplicates of product code were removed
-- Weight column converted to decimal format, removed units, and converted all to kg by using column from example and DAX function: Weight In Kg = IF(Products[Weight] > 100, Products[Weight]/1000,Products[Weight])
 
 **Stores Table**:\
 The Stores table contains information about each store, including the store code, store type, country, region, and address.
