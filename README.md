@@ -77,7 +77,7 @@ Total Profit = SUMX(Orders, Orders[Product Quantity] * (RELATED(Products[Sale Pr
 
 Total Quantity = SUM(Orders[Product Quantity])
 
-Total Customers = DISTINCTCOUNT(Orders[User ID])
+Total Customers = DISTINCTCOUNT(Customers[User UUID])
 
 Total Revenue = SUMX(Orders, Orders[Product Quantity] * RELATED(Products[Sale Price]))
 
