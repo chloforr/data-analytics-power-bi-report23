@@ -98,7 +98,20 @@ Country = SWITCH ([Country Code], "GB", "United Kingdom", "US", "United States",
 
 Geography = Stores[Country Region] & ", " & Stores[Country]
 
+**Star Schema**:\
+A star schema was created by building relationships between tables. 
+- Created one-to-many relationships between tables and the fact table Orders
+- Created an active relationship between Orders[Date] and Date[Date]
 
+The following relationships were created:
+
+Products[Product Code] to Orders[Product Code]
+Stores[Store Code] to Orders[Store Code]
+Customers[User UUID] to Orders[User ID]
+Date[Date] to Orders[Order Date]
+Date[Date] to Orders[Shipping Date]
+
+![Star-model](https://github.com/chloforr/data-analytics-power-bi-report23/assets/141561058/479a98b4-f0b5-4ff4-b080-47e50f391dfc)
 
 
   
