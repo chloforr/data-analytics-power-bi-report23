@@ -114,6 +114,47 @@ Date[Date] to Orders[Shipping Date]
 ![Star-model](https://github.com/chloforr/data-analytics-power-bi-report23/assets/141561058/479a98b4-f0b5-4ff4-b080-47e50f391dfc)
 
 
+## Milestone 4 - Creating the report
+A report was created with four pages: Executive Summary, Customer Detail, Product Detail, Stores Map.
+
+## Milestone 5 - Creating the Customer Detail page
+A report page was constructed and filled with information on customers.
+
+**Card visuals**
+- Created Unique Customer card from the corresponding measure
+- Created a new measure Revenue per Customer and constructed the corresponding card visual
+- Created Top Customer by Revenue card by filtering customers by highest revenue spent
+- Created Top Customer Orders card by filtering number of orders by top customer
+- Created Top Customer Revenue by filtering revenue by top customer
+
+The DAX formula for Revenue per Customer was:
+
+Revenue per Customer = 'Measures Table'[Total Revenue] / 'Measures Table'[Total Customers]
+
+**Line graph**
+- Created line graph of Number of Customers as a function of time
+- Added a date hierarchy to include Year, Quarter, and Month and drill down feature to navigate time periods
+- Added a trend line
+- Added a projection for 10 periods with a 95% confidence interval
+
+**Summary donut and column charts**
+- Created donut chart of Customers by Country
+- Created column chart of Total Customers by Product Category based on orders placed
+
+**Top 20 Customers Table**
+- Created table filtering top 20 customers by revenue
+- Included corresponding number of orders per top 20 customers
+- Added bar chart representation of revenue
+
+**Slicer**
+- Added slicer to navigate all visuals on page between years 2010-2023
+
+Completed Customer Detail page:
+
+
+![customer-detail](https://github.com/chloforr/data-analytics-power-bi-report23/assets/141561058/62564d27-d6eb-4a6c-991f-9b68951ffece)
+
+
   
   
 
