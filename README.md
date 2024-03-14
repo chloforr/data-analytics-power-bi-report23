@@ -155,6 +155,41 @@ Completed Customer Detail page:
 ![customer-detail](https://github.com/chloforr/data-analytics-power-bi-report23/assets/141561058/62564d27-d6eb-4a6c-991f-9b68951ffece)
 
 
+## Milestone 6 - Creating the Executive Summary page
+A report page was constructed and filled with information on profits, orders, and revenue.
+
+**Measures Cards**
+- Created Total Revenue, Total Orders, and Total Profit cards
+
+**Summar donut and column charts**
+- Created Total Revenue Donuts filtered by Country and Store Type
+- Created bar chart of Total Orders by Product Category
+
+**Revenue Trending Line Chart**
+- Created line graph of Total Revenue as a function of time
+- Added a date hierarchy to include Year, Quarter, and Month and drill down feature to navigate time periods
+- Added a trend line
+- Added a projection for 10 periods with a 95% confidence interval
+
+**KPIs**
+- Created KPIs for quarterly Revenue, Orders, and Profits
+- Value was set to the Total of each category
+- Trend was set to Start of Quarter
+- Target was set to 5% growth for each category with the following DAX equations:
+
+Previous Quarter Revenue = CALCULATE([Total Revenue], PREVIOUSQUARTER(Dates[Date]))
+Previous Quarter Orders = CALCULATE([Total Orders], PREVIOUSQUARTER(Dates[Date]))
+Previous Quarter Profit = CALCULATE([Total Profit], PREVIOUSQUARTER(Dates[Date]))
+
+Target Orders = 'Measures Table'[Previous Quarter Orders]*1.05
+Target Revenue = 'Measures Table'[Previous Quarter Revenue]*1.05
+Target Profit = 'Measures Table'[Previous Quarter Profit]*1.05
+
+A screenshot of the completed Executive Summary Page:
+![exec_summary_mine](https://github.com/chloforr/data-analytics-power-bi-report23/assets/141561058/93b0f200-11ed-4094-b4f7-760709267bc1)
+
+
+
   
   
 
